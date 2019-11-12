@@ -6,32 +6,59 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="@color/colorPrimaryDark">
+    android:background="@color/colorPrimaryDark"
+    >
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/main_cat"
+        android:layout_height="200dp"
+        android:src="@drawable/bw_main_cat"
         android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"
+        android:alpha=".5"
         />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Trap / Neuter / Return"
+        android:gravity="center"
+        android:textColor="@color/textPrimary"
+        android:fontFamily="monospace"
+        android:textSize="24dp"
+        android:layout_margin="16dp"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Record Cat" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View Records"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="Record Cat"
+            android:background="@color/buttonColor"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/textPrimary"
+            />
 
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="View Records"
+            android:background="@color/buttonColor"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/textPrimary"
+            />
+
+    </LinearLayout>
 </LinearLayout>
