@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CaptureActivity"></activity>
-        <activity android:name=".RecordsActivity" />
+        <activity android:name=".CaptureActivity"
+            android:label="Capture!"/>
+        <activity android:name=".RecordsActivity"
+            android:label="Caught!"/>
         <activity android:name=".MainActivity"
             android:label="CatCatchr">
             <intent-filter>
