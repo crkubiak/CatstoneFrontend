@@ -16,6 +16,7 @@
         android:alpha=".5"
         android:scaleType="centerCrop"
         android:src="@drawable/bw_main_cat"
+        android:id="@+id/main_image"
         />
 
     <TextView
@@ -41,11 +42,11 @@
             android:layout_width="150dp"
             android:layout_height="75dp"
             android:layout_margin="8dp"
-            android:background="@color/buttonColor"
+
             android:fontFamily="monospace"
             android:gravity="center"
             android:text="Capture Cat"
-            android:textColor="@color/textPrimary"
+
             android:textSize="18sp"
             />
 
@@ -54,11 +55,11 @@
             android:layout_width="150dp"
             android:layout_height="75dp"
             android:layout_margin="8dp"
-            android:background="@color/buttonColor"
+
             android:fontFamily="monospace"
             android:gravity="center"
             android:text="View Captures"
-            android:textColor="@color/textPrimary"
+
             android:textSize="18sp"
             />
 

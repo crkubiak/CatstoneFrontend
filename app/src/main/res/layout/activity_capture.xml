@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
     tools:context=".CaptureActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonAttachPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attach Picture"
+        android:layout_above="@id/buttonTakePicture"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:id="@+id/buttonTakePicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Picture"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:textColor="@color/textPrimary" />
+
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Location"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/textPrimary"
+        android:layout_margin="8dp"
+        android:layout_above="@id/buttonAttachPicture"/>
+
+
+
+</RelativeLayout>
