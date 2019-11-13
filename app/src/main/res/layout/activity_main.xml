@@ -4,60 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
     >
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"
-        android:src="@drawable/bw_main_cat"
-        android:scaleType="centerCrop"
         android:layout_marginTop="100dp"
         android:alpha=".5"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bw_main_cat"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Trap / Neuter / Return"
-        android:gravity="center"
-        android:textColor="@color/textPrimary"
-        android:fontFamily="monospace"
-        android:textSize="24dp"
         android:layout_margin="16dp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Trap / Neuter / Return"
+        android:textColor="@color/textPrimary"
+        android:textSize="24dp"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         >
 
         <Button
+            android:id="@+id/capture_cat_button"
             android:layout_width="150dp"
             android:layout_height="75dp"
-            android:text="Record Cat"
-            android:background="@color/buttonColor"
-            android:textSize="18sp"
-            android:gravity="center"
             android:layout_margin="8dp"
+            android:background="@color/buttonColor"
             android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Capture Cat"
             android:textColor="@color/textPrimary"
+            android:textSize="18sp"
             />
 
         <Button
+            android:id="@+id/view_captures_button"
             android:layout_width="150dp"
             android:layout_height="75dp"
-            android:text="View Records"
-            android:background="@color/buttonColor"
-            android:textSize="18sp"
-            android:gravity="center"
             android:layout_margin="8dp"
+            android:background="@color/buttonColor"
             android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="View Captures"
             android:textColor="@color/textPrimary"
+            android:textSize="18sp"
             />
 
     </LinearLayout>
