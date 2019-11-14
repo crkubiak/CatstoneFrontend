@@ -8,44 +8,75 @@
     android:orientation="vertical"
     tools:context=".CaptureActivity">
 
-
-    <Button
-        android:id="@+id/buttonAttachPicture"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Attach Picture"
-        android:layout_above="@id/buttonTakePicture"
-        android:layout_margin="8dp"/>
+    <ImageView
+        android:id="@+id/imagePlaceHolder"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:alpha=".2"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/img_placeholder"/>
 
     <Button
         android:id="@+id/buttonTakePicture"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Take Picture"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_alignParentBottom="true"/>
+        android:layout_below="@id/imagePlaceHolder"
+        android:layout_centerHorizontal="true"
+        android:text="Take Picture"/>
+
+    <Button
+        android:id="@+id/buttonAttachPicture"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonTakePicture"
+        android:layout_centerHorizontal="true"
+        android:text="Attach Picture"/>
 
     <TextView
-        android:id="@+id/textLocation"
-        android:layout_width="match_parent"
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAttachPicture"
         android:text="Location:"
-        android:textColor="@color/textPrimary" />
+        android:textColor="@color/textPrimary"
+        android:textSize="20dp" />
 
     <EditText
         android:id="@+id/editTextLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Location"
-        android:textColorHint="@color/colorPrimary"
-        android:textColor="@color/textPrimary"
+        android:layout_below="@id/locationTextView"
         android:layout_margin="8dp"
-        android:layout_above="@id/buttonAttachPicture"/>
+        android:background="@color/textField"
+        android:ems="10"
+        android:hint="25 E Washington..."
+        android:inputType="textPostalAddress"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
+    <TextView
+        android:id="@+id/commentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLocation"
+        android:text="Comment:"
+        android:textColor="@color/textPrimary"
+        android:textSize="20dp" />
 
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentTextView"
+        android:layout_margin="8dp"
+        android:background="@color/textField"
+        android:ems="10"
+        android:hint="Just the facts..."
+        android:inputType="textMultiLine"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/colorPrimary"/>
 
 </RelativeLayout>
