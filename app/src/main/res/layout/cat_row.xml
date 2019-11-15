@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:id="@+id/cat_row_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/img_placeholder"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="25 E Washington St Chicago, IL 60608"
+        android:textColor="@color/textPrimary"
+        android:layout_toRightOf="@id/cat_row_image_view"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cat_row_location_text_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="That is a fine looking cat you've..."
+        android:textColor="@color/textPrimary"
+        android:layout_toRightOf="@id/cat_row_image_view"
+        android:layout_below="@id/cat_row_location_text_view"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cat_row_comment_text_view"/>
+
+
+</RelativeLayout>
